@@ -1,0 +1,61 @@
+.InfoBox {
+    text-align: center;
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    perspective: 1000px;
+}
+
+.card-container .MuiCard-root {
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-container .MuiCard-root:hover {
+    transform: translateY(-10px) rotateY(5deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-container .MuiCardMedia-root {
+    height: 180px !important;
+    transition: transform 0.5s ease;
+}
+
+.card-container .MuiCard-root:hover .MuiCardMedia-root {
+    transform: scale(1.05);
+}
+
+.weather-details {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.weather-detail-item {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.weather-detail-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+.weather-description {
+    grid-column: span 2;
+    margin-top: 10px;
+    font-style: italic;
+    padding: 10px;
+    border-radius: 8px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.07));
+}

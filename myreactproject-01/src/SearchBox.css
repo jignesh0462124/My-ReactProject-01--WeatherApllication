@@ -1,0 +1,60 @@
+.SearchBox {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    background: linear-gradient(145deg, #ca4343, #432020);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.search-form .MuiTextField-root {
+    width: 100%;
+}
+
+.search-form .MuiOutlinedInput-root {
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.search-form .MuiOutlinedInput-root:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-form .MuiButton-contained {
+    background: linear-gradient(45deg, #8bbce5, #0bc6f0d4);
+    border-radius: 30px;
+    padding: 10px 30px;
+    text-transform: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(33, 150, 243, 0.3);
+    transition: all 0.3s ease;
+}
+
+.search-form .MuiButton-contained:hover {
+    box-shadow: 0 6px 14px rgba(33, 150, 243, 0.4);
+    transform: translateY(-3px);
+}
+
+.error-message {
+    margin-top: 15px;
+    color: #f44336;
+    font-weight: 500;
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-5px); }
+    40%, 80% { transform: translateX(5px); }
+}
